@@ -1,16 +1,16 @@
-# Multer Azure
-This is a multer storage engine for Azure's blob storage.
+# Multer Azure Blob
+This is a multer storage engine for Azure's blob storage. This was originally published by mckalexee, but PRs have gone ignored, so I can only assume it is no longer being maintainted
 
 ## Installation
 ```sh
-npm install --save multer-azure
+npm install --save multer-azure-blob
 ```
 
 ## Usage
 ```javascript
 var express = require('express')
 var multer = require('multer')
-var multerAzure = require('multer-azure')
+var multerAzure = require('multer-azure-blob')
 
 var app = express()
 
@@ -34,7 +34,7 @@ app.post('/', upload.any(), function (req, res, next) {
 ```
 
 ### File Information
-`multer-azure` will return the following information in each file in the `req.files` parameter:
+`multer-azure-blob` will return the following information in each file in the `req.files` parameter:
 
 Key|Description
 ---|---
